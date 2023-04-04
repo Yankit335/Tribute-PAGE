@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    
+}
+body{
+    color: aliceblue;
+    background-color: rgb(67, 67, 67);
+}
+.container{
+    margin: 0px 50px;
+    padding: 20px;
+    text-align: center;
+}
+.container h1{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 3px 2px 2px black ;
+}
+.container p{
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 1px 1px black;
+}
+.tribute{
+    display: flex;
+    max-width: 70%;
+    margin: 0px auto;
+    color: aliceblue;
+    color: black;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.tribute blockquote{
+    width: 100%;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    padding-left: 20px;
+}
+.tribute blockquote p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+}
+.tribute img{
+    width: 350px;
+}
+.bio p{
+    margin:20px 20%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+
+}
+.morethings{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+}
+.morethings h2{
+    width: 18%;
+    margin: auto;
+}
+.morethings h2 button{
+  appearance: none;
+  background-color: rgb(110, 109, 109);
+  border: 2px solid #7f7f7f;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+.morethings h2 button:disabled {
+  pointer-events: none;
+}
+.morethings h2 button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.morethings h2 button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.modi {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid rgb(252, 252, 252);
+    border-radius: 10px;
+    z-index: 10;
+    background-color: rgb(56, 55, 55);
+    width: 500px;
+    max-width: 80%;
+}
+  
+.modi.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+  
+  .modi-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  
+  .modi-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modi-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .modi-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
