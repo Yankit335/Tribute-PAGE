@@ -244,3 +244,53 @@ body{
     width:94%;
   }
 }
+@media only screen and (max-width: 420px) {
+  .tribute {
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 50px 20px 50px;
+    padding: 20px 40px 0px 20px;
+  }
+  .tribute blockquote {
+    font-size: 22px;
+    text-align: center;
+  }
+  .tribute blockquote p {
+    font-size: 15px;
+    text-align: center;
+    color: #7f7f7f;
+  }
+  .tribute img {
+    padding-left: 15%;
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+  }
+  .bio p {
+    margin: 20px 10%;
+    font-size: 20px;
+  }
+  .modi {
+    width: 100%;
+  }
+  .modi-body {
+    max-height: 700px;
+    overflow: scroll;
+    width:92%;
+    font-size: 20px;
+
+  }
+  .morethings{
+    display:block;
+
+  }
+  .morethings h2 {
+    margin: 10px auto 10px auto;
+    text-align: center;
+    width: 280px;
+  }
+  .morethings h2 button {
+    font-size: 20px;
+  }
+}
