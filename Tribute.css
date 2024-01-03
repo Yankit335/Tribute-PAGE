@@ -170,3 +170,77 @@ body{
     opacity: 1;
     pointer-events: all;
   }
+@media only screen and (max-width: 1000px){
+  .tribute {
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 130px 20px 130px;
+    padding: 20px 20px 0px 20px;
+  }
+  .tribute blockquote {
+    font-size: 40px;
+    text-align: center;
+  }
+  .tribute blockquote p {
+    font-size: 30px;
+    text-align: left;
+    color: #7f7f7f;
+  }
+  .tribute img {
+    padding-left: 20%;
+  }
+  .bio p {
+    margin: 20px 10%;
+  }
+  .modi {
+    width: 100%;
+  }
+  .modi-body {
+    max-height: 800px;
+    overflow: scroll;
+    width:94%;
+  }
+  .morethings{
+    display:block;
+
+  }
+  .morethings h2 {
+    margin: 20px auto 20px auto;
+    text-align: center;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .tribute {
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 50px 20px 50px;
+    padding: 20px 20px 0px 20px;
+  }
+  .tribute blockquote {
+    font-size: 30px;
+    text-align: center;
+  }
+  .tribute blockquote p {
+    font-size: 20px;
+    text-align: left;
+    color: #7f7f7f;
+  }
+  .tribute img {
+    padding-left: 15%;
+  }
+  .bio p {
+    margin: 20px 10%;
+    font-size: 25px;
+  }
+  .modi {
+    width: 100%;
+  }
+  .modi-body {
+    max-height: 700px;
+    overflow: scroll;
+    width:94%;
+  }
+}
